@@ -1,0 +1,408 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #00bca1; /* Requested Color */
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Keeping it white for contrast */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #003d35; /* A darker shade for hover effect */
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: white;
+    color: #00bca1;
+    border: 2px solid #00bca1;
+}
+
+.login-btn:hover {
+    background-color: #003d35;
+    color: white;
+}
+
+/* Signup Button */
+.signup-btn {
+    background-color: #003d35;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #003d35;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: #003d35;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4; /* Light Grey Background */
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #00bca1; /* Theme Color */
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 20px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00bca1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #008f7a; /* Slightly Darker for Hover */
+}
+
+/* Hero Image */
+.hero-image {
+    width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+/* Facilities Section */
+.facilities {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+.facilities h2 {
+    font-size: 36px;
+    color: #00bca1;
+    margin-bottom: 40px;
+}
+
+/* Card Container */
+.facility-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.facility-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.facility-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.facility-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.facility-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+
+
+/* Customer Persona Section */
+.customer-persona {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.customer-persona h2 {
+    font-size: 28px;
+    color: #00bca1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+/* Persona Container */
+.persona {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    max-width: 900px; /* Limit max-width for each persona block */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Persona 1 */
+.persona-one {
+    background-color: #f0f8f0; /* Light greenish background */
+}
+
+.persona-one:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.persona-one h3 {
+    font-size: 24px;
+    color: #00695c; /* Dark greenish-blue for title */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Persona 2 */
+.persona-two {
+    background-color: #f8f0f0; /* Light pinkish background */
+}
+
+.persona-two:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.persona-two h3 {
+    font-size: 24px;
+    color: #d32f2f; /* Dark red for title */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Content Styling */
+h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+p strong {
+    color: #00bca1; /* Accent color for important text */
+}
+
+/* Persona Left and Right */
+.persona-left,
+.persona-right {
+    width: 40%;
+}
+
+.persona-left img,
+.persona-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .persona {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .persona-left,
+    .persona-right {
+        width: 100%;
+    }
+
+    .persona-left img,
+    .persona-right img {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #003d35; /* Dark green */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin: 10px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #00bca1; /* Accent color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    background-color: #002b29; /* Slightly darker background */
+    padding: 10px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #00bca1;  /* You can use the theme color */
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.5;
+}

@@ -1,0 +1,170 @@
+/* Common Auth Form Styling */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif; /* Make sure the page uses a readable font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2; /* Set a background color */
+}
+
+.auth-form {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 500px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add some spacing from the top */
+}
+
+.auth-form h2 {
+    font-size: 28px;
+    color: #00bca1;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #00bca1;
+}
+
+/* Submit Button */
+.auth-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bca1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.auth-submit-btn:hover {
+    background-color: #008f7a;
+}
+
+/* Link Styling */
+.auth-link {
+    color: #00bca1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    color: #003d35;
+}
+
+/* Footer Styling */
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003d35;
+    color: white;
+} */
+
+
+.dashboard-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 700px;
+    margin: 50px auto 0; /* Add margin-top to create space at the top */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: auto; /* Ensure it takes height according to content */
+}
+
+.dashboard-container h1 {
+    font-size: 32px;
+    color: #00bca1;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.dashboard-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.dashboard-form h2 {
+    font-size: 24px;
+    color: #008f7a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Form Inputs */
+.dashboard-form input, .dashboard-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dashboard-form textarea {
+    resize: vertical;
+}
+
+.dashboard-form input:focus, .dashboard-form textarea:focus {
+    outline: none;
+    border-color: #00bca1;
+}
+
+/* Submit Button */
+.auth-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bca1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.auth-submit-btn:hover {
+    background-color: #008f7a;
+}
+
+/* Logout Button */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
