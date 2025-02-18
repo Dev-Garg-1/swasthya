@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Swasthya</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <form id="health-form" class="dashboard-form">
+            <h2>Emergency Contacts</h2>
+            <label for="emergency-name">Name</label>
+            <input type="text" id="emergency-name" name="emergency-name" placeholder="Enter emergency contact's name" required>
+
+            <label for="emergency-phone">Phone Number</label>
+            <input type="text" id="emergency-phone" name="emergency-phone" placeholder="Enter phone number" required>
+
+            <label for="emergency-relationship">Relationship</label>
+            <input type="text" id="emergency-relationship" name="emergency-relationship" placeholder="Enter your relationship with the contact" required>
+
+            <h2>Additional Health Information</h2>
+            <label for="health-status">Health Status</label>
+            <textarea id="health-status" name="health-status" rows="4" placeholder="Any additional health information (e.g., conditions, allergies, medications)"></textarea>
+
+            <button type="submit" class="auth-submit-btn">Save Details</button>
+        </form>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
