@@ -36,6 +36,8 @@ healthForm.addEventListener("submit", function(event) {
 
     alert("Your details have been saved!");
 
+    window.location.href = "../pages/further-details.html";
+
     // Clear the form (optional)
     healthForm.reset();
 });

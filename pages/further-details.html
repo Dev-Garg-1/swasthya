@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Further Details - Swasthya</title>
+    <link rel="stylesheet" href="../css/further-details.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Enter Further Details</h1>
+        <form id="further-details-form" class="dashboard-form">
+            <div class="form-container">
+                <!-- Personal Information -->
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="family-history">Family History</label>
+                    <textarea id="family-history" name="family-history" rows="3" placeholder="Details about family medical history"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="bp-systolic">BP (Systolic)</label>
+                    <input type="number" id="bp-systolic" name="bp-systolic">
+                </div>
+
+                <div class="form-group">
+                    <label for="bp-diastolic">BP (Diastolic)</label>
+                    <input type="number" id="bp-diastolic" name="bp-diastolic">
+                </div>
+
+                <div class="form-group">
+                    <label for="blood-sugar">Blood Sugar</label>
+                    <input type="number" id="blood-sugar" name="blood-sugar">
+                </div>
+
+                <div class="form-group">
+                    <label for="cholesterol">Cholesterol</label>
+                    <input type="number" id="cholesterol" name="cholesterol">
+                </div>
+
+                <div class="form-group">
+                    <label for="bmi">BMI</label>
+                    <input type="number" step="0.1" id="bmi" name="bmi">
+                </div>
+
+                <div class="form-group">
+                    <label for="smoking-status">Smoking Status</label>
+                    <select id="smoking-status" name="smoking-status">
+                        <option value="Non-smoker">Non-smoker</option>
+                        <option value="Ex-smoker">Ex-smoker</option>
+                        <option value="Light Smoker">Light Smoker</option>
+                        <option value="Moderate Smoker">Moderate Smoker</option>
+                        <option value="Heavy Smoker">Heavy Smoker</option>
+                        <option value="Social Smoker">Social Smoker</option>
+                        <option value="Occasional Smoker">Occasional Smoker</option>
+                        <option value="Trying to Quit">Trying to Quit</option>
+                        <option value="Vaper (Nicotine)">Vaper (Nicotine)</option>
+                        <option value="Dual User (Cigarette + Vaper)">Dual User (Cigarette + Vaper)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alcohol-consumption">Alcohol Consumption</label>
+                    <select id="alcohol-consumption" name="alcohol-consumption">
+                        <option value="None">None</option>
+                        <option value="Occasional">Occasional</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Frequent">Frequent</option>
+                        <option value="Heavy">Heavy</option>
+                        <option value="Social Drinker">Social Drinker</option>
+                        <option value="Binge Drinker">Binge Drinker</option>
+                        <option value="Weekend Drinker">Weekend Drinker</option>
+                        <option value="Rare Drinker">Rare Drinker</option>
+                        <option value="Alcohol Dependent">Alcohol Dependent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exercise-level">Exercise Level</label>
+                    <select id="exercise-level" name="exercise-level">
+                        <option value="None">None</option>
+                        <option value="Light">Light</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Intense">Intense</option>
+                        <option value="Yoga Only">Yoga Only</option>
+                        <option value="Walking Daily">Walking Daily</option>
+                        <option value="Gym 2-3 times/week">Gym 2-3 times/week</option>
+                        <option value="Athlete">Athlete</option>
+                        <option value="Sedentary">Sedentary</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="existing-conditions">Existing Conditions</label>
+                    <select id="existing-conditions" name="existing-conditions">
+                        <option value="None">None</option>
+                        <option value="Hypertension">Hypertension</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="Heart Disease">Heart Disease</option>
+                        <option value="Kidney Disease">Kidney Disease</option>
+                        <option value="Hypertension, Diabetes">Hypertension, Diabetes</option>
+                        <option value="Hypertension, Heart Disease">Hypertension, Heart Disease</option>
+                        <option value="Diabetes, Kidney Disease">Diabetes, Kidney Disease</option>
+                        <option value="Hypertension, Kidney Disease">Hypertension, Kidney Disease</option>
+                        <option value="Heart Disease, Kidney Disease">Heart Disease, Kidney Disease</option>
+                        <option value="Asthma">Asthma</option>
+                        <option value="Obesity">Obesity</option>
+                        <option value="COPD">COPD</option>
+                        <option value="Thyroid Disorder">Thyroid Disorder</option>
+                        <option value="Cancer History">Cancer History</option>
+                        <option value="Hypertension, Obesity">Hypertension, Obesity</option>
+                        <option value="Diabetes, Obesity">Diabetes, Obesity</option>
+                        <option value="Hypertension, Diabetes, Obesity">Hypertension, Diabetes, Obesity</option>
+                        <option value="Autoimmune Disease">Autoimmune Disease</option>
+                        <option value="Arthritis">Arthritis</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="medications">Medications</label>
+                    <select id="medications" name="medications">
+                        <option value="None">None</option>
+                        <option value="BP Meds">BP Meds</option>
+                        <option value="Insulin">Insulin</option>
+                        <option value="Aspirin">Aspirin</option>
+                        <option value="BP Meds, Insulin">BP Meds, Insulin</option>
+                        <option value="Cholesterol Meds">Cholesterol Meds</option>
+                        <option value="Blood Thinners">Blood Thinners</option>
+                        <option value="Diuretics">Diuretics</option>
+                        <option value="Beta Blockers">Beta Blockers</option>
+                        <option value="ACE Inhibitors">ACE Inhibitors</option>
+                        <option value="Metformin">Metformin</option>
+                        <option value="Statins">Statins</option>
+                        <option value="Painkillers (NSAIDs)">Painkillers (NSAIDs)</option>
+                        <option value="Thyroid Meds">Thyroid Meds</option>
+                        <option value="Antidepressants">Antidepressants</option>
+                        <option value="Hypertension Combo Therapy">Hypertension Combo Therapy</option>
+                        <option value="Diabetes Combo Therapy">Diabetes Combo Therapy</option>
+                        <option value="Heart Disease Drugs">Heart Disease Drugs</option>
+                        <option value="Kidney Disease Drugs">Kidney Disease Drugs</option>
+                        <option value="Anticoagulants">Anticoagulants</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="heart-rate">Heart Rate</label>
+                    <input type="number" id="heart-rate" name="heart-rate">
+                </div>
+
+                <div class="form-group">
+                    <label for="ecg-abnormality">ECG Abnormality</label>
+                    <input type="text" id="ecg-abnormality" name="ecg-abnormality">
+                </div>
+
+                <div class="form-group">
+                    <label for="recent-complaints">Recent Complaints</label>
+                    <select id="recent-complaints" name="recent-complaints">
+                        <option value="None">None</option>
+                        <option value="Chest Pain">Chest Pain</option>
+                        <option value="Dizziness">Dizziness</option>
+                        <option value="Fatigue">Fatigue</option>
+                        <option value="Headache">Headache</option>
+                        <option value="Shortness of Breath">Shortness of Breath</option>
+                        <option value="Palpitations">Palpitations</option>
+                        <option value="Swelling in Legs">Swelling in Legs</option>
+                        <option value="Blurred Vision">Blurred Vision</option>
+                        <option value="Nausea">Nausea</option>
+                        <option value="Chest Tightness">Chest Tightness</option>
+                        <option value="Fainting">Fainting</option>
+                        <option value="Sudden Weakness">Sudden Weakness</option>
+                        <option value="Numbness in Limbs">Numbness in Limbs</option>
+                        <option value="Back Pain">Back Pain</option>
+                        <option value="Joint Pain">Joint Pain</option>
+                        <option value="Abdominal Pain">Abdominal Pain</option>
+                        <option value="Coughing">Coughing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="other-complaints">Other Complaints</label>
+                    <textarea id="other-complaints" name="other-complaints" rows="3" placeholder="Other complaints"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/further-details.js"></script>
+</html>
