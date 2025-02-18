@@ -6,6 +6,7 @@
     <title>Prediction Result - Swasthya</title>
     <link rel="stylesheet" href="../css/result.css">
     <link rel="icon" href="../images/icon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="result-container">
@@ -14,6 +15,9 @@
         <div id="result-box" class="hidden">
             <h2>Health Risk Analysis</h2>
             <ul id="result-list"></ul>
+
+            <!-- Added canvas element for bar chart -->
+            <canvas id="healthRiskChart" width="400" height="200"></canvas>
         </div>
         <button id="back-btn">Go Back</button>
     </div>
