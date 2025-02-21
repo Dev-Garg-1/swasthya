@@ -1,0 +1,16 @@
+import pickle
+import random
+
+class FakeModel:
+    def predict(self, X):
+        # Generate random risk levels for each input row
+        risk_levels = ['Low', 'Medium', 'High']
+        return [[random.choice(risk_levels) for _ in range(4)] for _ in range(len(X))]
+
+# Create and save the fake model
+model = Model()
+
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
+print("model saved as model.pkl")

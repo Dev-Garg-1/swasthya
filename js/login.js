@@ -47,6 +47,7 @@ document.getElementById('login-form').addEventListener('submit', async(e) => {
     if(data.token) {
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
+        localStorage.setItem("loggedIn", "true");
         window.location.href = "/pages/dashboard.html";
     }else {
         alert(data.error);

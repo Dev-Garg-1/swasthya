@@ -6,8 +6,11 @@ if (localStorage.getItem("loggedIn") !== "true") {
 // Logout function
 function logout() {
     localStorage.removeItem("loggedIn");
+    localStorage.removeItem("token");
+    localStorage.removeItem("user"); // Remove user data
     window.location.href = "login.html";
 }
+
 
 // Handle form submission (for now, just display the data)
 const healthForm = document.getElementById("health-form");
